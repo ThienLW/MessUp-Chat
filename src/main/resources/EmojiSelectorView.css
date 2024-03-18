@@ -1,0 +1,53 @@
+/* Tùy chỉnh giao diện cho TextField */
+#searchTextField {
+    -fx-background-color: transparent; /* Đặt màu nền trong suốt */
+    -fx-border-width: 0; /* Bỏ viền */
+}
+
+
+/* Scrollbar */
+.scroll-bar:vertical {
+    -fx-background-color: #F0F0F0; /* Màu nền thanh cuộn */
+    -fx-background-insets: 0;
+    -fx-pref-width: 10px; /* Đặt chiều rộng của thanh cuộn */
+    -fx-padding: 2px; /* Đặt khoảng cách so với xung quanh */
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #888888; /* Màu của nút trượt */
+    -fx-background-insets: 0;
+}
+
+/* Tạo hiệu ứng hover */
+.scroll-bar:vertical:hover .thumb {
+    -fx-background-color: #AAAAAA; /* Màu của nút trượt khi hover */
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: #f4f4f4; /* Màu của nút điều hướng */
+    -fx-background-insets: 0;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: #F0F0F0; /* Màu nền thanh cuộn */
+    -fx-background-insets: 0;
+    -fx-pref-height: 10px; /* Đặt chiều cao của thanh cuộn */
+    -fx-padding: 2px; /* Đặt khoảng cách so với xung quanh */
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #888888; /* Màu của nút trượt */
+    -fx-background-insets: 0;
+}
+
+/* Tạo hiệu ứng hover */
+.scroll-bar:horizontal:hover .thumb {
+    -fx-background-color: #AAAAAA; /* Màu của nút trượt khi hover */
+}
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #f4f4f4; /* Màu của nút điều hướng */
+    -fx-background-insets: 0;
+}

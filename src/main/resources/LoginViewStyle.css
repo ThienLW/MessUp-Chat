@@ -1,0 +1,157 @@
+/* Điều chỉnh font chữ và màu sắc */
+.text-field, .password-field, .combo-box {
+    -fx-font-family: "Verdana"; /* Sử dụng font Verdana */
+    -fx-font-size: 12px;
+}
+
+/* Điều chỉnh giao diện cho các TextField */
+.text-field, .password-field {
+    -fx-background-color: #f0f0f0; /* Màu nền cho text field */
+    -fx-text-fill: #333; /* Màu chữ cho text field */
+    -fx-prompt-text-fill: #888; /* Màu văn bản gợi ý */
+    -fx-border-color: #ddd; /* Màu viền */
+    -fx-border-radius: 5px; /* Bo góc viền */
+}
+
+/* Styling the ComboBox button */
+.combo-box {
+    -fx-background-color: #ffffff; /* Màu nền */
+    -fx-border-width: 1px;
+    -fx-pref-width: 80px; /* Độ rộng */
+    -fx-background-radius: 5px;
+}
+.combo-box .arrow {
+    -fx-background-color: #6499E9;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/* Styling the ComboBox popup */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-width: 1px;
+    -fx-border-color: #7BC5CD; /* Màu đường viền */
+    -fx-background-radius: 0 0 5 5;
+}
+
+/* Select language Combobox */
+/* Styling the ComboBox items */
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+/* Styling the hover ComboBox item */
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #6499E9; /* Màu nền khi chọn */
+    -fx-text-fill: white; /* Màu chữ khi chọn */
+}
+
+/* Styling the selected ComboBox item */
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-text-fill: black; /* Màu chữ khi chọn */
+}
+
+/* TextField + PasswordField */
+.text-field:focused, .password-field:focused {
+    -fx-background-color: #fff; /* Màu nền khi focus */
+    -fx-border-color: #007acc; /* Màu viền khi focus */
+}
+
+/*Checkbox*/
+#showPasswordCheckBox {
+    -fx-text-fill: black; /* Đặt màu chữ */
+    -fx-padding: 1 5 1 5 px; /* Đặt khoảng cách xung quanh checkbox */
+    -fx-background-color: transparent; /* Đặt màu nền là trong suốt */
+    -fx-border-radius: 5px; /* Bo góc viền */
+}
+
+#showPasswordCheckBox:selected {
+    -fx-background-color: #007acc; /* Đặt màu nền khi được chọn */
+    -fx-text-fill: white; /* Đặt màu chữ khi được chọn */
+}
+
+
+/*Button*/
+#btn_login {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #FF6969; /* Màu nền cho nút đăng nhập */
+    -fx-text-fill: white; /* Màu chữ cho nút đăng ký */
+    -fx-background-radius: 5px; /* Bo góc viền */
+}
+
+#btn_login:hover {
+    -fx-background-color: #D80032; /* Màu nền khi hover nút đăng nhập */
+}
+
+#btn_login:pressed {
+    -fx-background-color: #C70039; /* Màu nền khi click nút đăng nhập */
+}
+
+#btn_signup {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color:  #141E46; /* Màu nền cho nút hủy (đỏ cam) */
+    -fx-text-fill: white; /* Màu chữ cho nút hủy */
+    -fx-background-radius: 5px; /* Bo góc viền */
+}
+
+#btn_signup:hover {
+    -fx-background-color: #007acc; /* Màu nền khi hover nút hủy (đỏ cam) */
+}
+
+#btn_signup:pressed {
+    -fx-background-color: #98E4FF; /* Màu nền khi click nút hủy (đỏ cam) */
+}
+
+/* Close and Minimize button */
+#btnClose, #btnMinimize {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+/* Đặt độ trong suốt */
+#btnMinimize .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+#btnClose .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+/* Đảm bảo hình bên trong hiển thị và có thể click */
+#btnMinimize .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+#btnClose .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+
+/* btnClose:hover */
+#btnClose:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 0.7), 15, 0, 0, 0);
+}
+
+/* btnMinimize:hover */
+#btnMinimize:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 255, 0, 0.7), 15, 0, 0, 0);
+
+}
+
+/*Forgot password label*/
+#forgotPasswordLabel {
+    -fx-text-fill: #6499e9; /* Màu chữ mặc định */
+}
+
+#forgotPasswordLabel:hover {
+    -fx-text-fill: #3876BF; /* Màu chữ khi hover */
+}
+
+#forgotPasswordLabel:pressed {
+    -fx-text-fill: darkblue; /* Màu chữ khi click */
+}

@@ -1,0 +1,172 @@
+/* Close and Minimize button */
+#btnClose, #btnMinimize {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+/* Đặt độ trong suốt */
+#btnMinimize .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+#btnClose .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+/* Đảm bảo hình bên trong hiển thị và có thể click */
+#btnMinimize .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+#btnClose .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+
+/* btnClose:hover */
+#btnClose:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 0.7), 15, 0, 0, 0);
+}
+
+/* btnMinimize:hover */
+#btnMinimize:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 255, 0, 0.7), 15, 0, 0, 0);
+
+}
+
+/* Điều chỉnh giao diện cho tiêu đề "Forgot password" */
+#txtForgotPasswd {
+    -fx-font-family: "Verdana"; /* Sử dụng font Verdana hoặc font khác theo sở thích của bạn */
+    -fx-font-size: 28px; /* Kích thước chữ */
+    -fx-text-fill: #007acc; /* Màu chữ */
+    -fx-font-weight: bold; /* Chữ in đậm */
+}
+
+#txtResetPasswd {
+    -fx-font-family: "Verdana"; /* Sử dụng font Verdana hoặc font khác theo sở thích của bạn */
+    -fx-font-size: 28px; /* Kích thước chữ */
+    -fx-text-fill: #A7D397; /* Màu chữ */
+    -fx-font-weight: bold; /* Chữ in đậm */
+}
+
+/* Điều chỉnh font chữ và màu sắc */
+.text-field, .password-field, .combo-box {
+    -fx-font-family: "Verdana"; /* Sử dụng font Verdana */
+    -fx-font-size: 12px;
+}
+
+/* Điều chỉnh giao diện cho các TextField */
+.text-field, .password-field {
+    -fx-background-color: #f0f0f0; /* Màu nền cho text field */
+    -fx-text-fill: #333; /* Màu chữ cho text field */
+    -fx-prompt-text-fill: #888; /* Màu văn bản gợi ý */
+    -fx-border-color: #ddd; /* Màu viền */
+    -fx-border-radius: 5px; /* Bo góc viền */
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-background-color: #fff; /* Màu nền khi focus */
+    -fx-border-color: #007acc; /* Màu viền khi focus */
+}
+
+/* Styling the ComboBox button */
+.combo-box {
+    -fx-background-color: #ffffff; /* Màu nền */
+    -fx-border-width: 1px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+}
+.combo-box .arrow {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/* Styling the ComboBox popup */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-width: 1px;
+    -fx-border-color: #7BC5CD; /* Màu đường viền */
+    -fx-background-radius: 0 0 5 5;
+}
+
+/* Styling the ComboBox items */
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+/* Styling the hover ComboBox item */
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #6499E9; /* Màu nền khi chọn */
+    -fx-text-fill: white; /* Màu chữ khi chọn */
+}
+
+/* Styling the selected ComboBox item */
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-text-fill: black; /* Màu chữ khi chọn */
+}
+
+
+/*Button*/
+#btnProceed {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #007acc; /* Màu nền cho nút đăng ký (blue) */
+    -fx-text-fill: white; /* Màu chữ cho nút đăng ký */
+    -fx-background-radius: 5px; /* Bo góc viền */
+}
+
+#btnProceed:hover {
+    -fx-background-color: #005b9f; /* Màu nền khi hover nút đăng ký (blue) */
+}
+
+#btnProceed:pressed {
+    -fx-background-color: #ccc; /* Màu nền khi click nút đăng ký (blue) */
+    -fx-text-fill: #005b9f;
+}
+
+#btnResetPasswd {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #98D8AA; /* Màu nền cho nút đăng ký (green) */
+    -fx-text-fill: white; /* Màu chữ cho nút đăng ký */
+    -fx-background-radius: 5px; /* Bo góc viền */
+}
+
+#btnResetPasswd:hover {
+    -fx-background-color: #7AA874; /* Màu nền khi hover nút đăng ký (green) */
+}
+
+#btnResetPasswd:pressed {
+    -fx-background-color: #ccc; /* Màu nền khi click nút đăng ký (green) */
+    -fx-text-fill: #7AA874;
+}
+
+#btnBack {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #ff5722; /* Màu nền cho nút hủy (đỏ cam) */
+    -fx-text-fill: white; /* Màu chữ cho nút hủy */
+    -fx-background-radius: 5px; /* Bo góc viền */
+}
+
+#btnBack:hover {
+    -fx-background-color: #e64a19; /* Màu nền khi hover nút hủy (đỏ cam) */
+}
+
+#btnBack:pressed {
+    -fx-background-color: #fcf414; /* Màu nền khi click nút hủy (đỏ cam) */
+    -fx-text-fill: #ff5722;
+}
+
+/* Error border */
+.error-border {
+    -fx-border-color: #FF6969;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-insets: -1;
+    -fx-effect: dropshadow(gaussian, red, 5, 0, 0, 0);
+}

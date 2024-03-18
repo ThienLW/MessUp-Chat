@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="636.0" style="-fx-background-color: #F0F0F0; -fx-border-width: 2;" stylesheets="@../../../LoginViewStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_caroz.LoginController">
+   <left>
+      <AnchorPane prefHeight="455.0" prefWidth="257.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="402.0" fitWidth="330.0" layoutY="24.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../img/banner-img-login.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-1.0" layoutY="426.0" prefHeight="28.0" prefWidth="331.0" style="-fx-background-color: #B6FFFA;">
+               <children>
+                  <Label fx:id="serverLabel" layoutX="10.0" layoutY="7.0" text="%server">
+                     <font>
+                        <Font name="Verdana" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtHostName" alignment="CENTER" layoutX="64.0" layoutY="2.0" prefHeight="26.0" prefWidth="95.0" text="localhost" />
+                  <Label fx:id="portLabel" layoutX="201.0" layoutY="7.0" text="%port">
+                     <font>
+                        <Font name="Verdana" size="12.0" />
+                     </font>
+                  </Label>
+                  <Line endX="6.6" endY="-11.4" layoutX="172.0" layoutY="13.0" startX="6.6" startY="14.0" stroke="#240594" strokeWidth="2.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="454.0" prefWidth="349.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-284.0" prefHeight="24.0" prefWidth="636.0" style="-fx-background-color: #232D3F;">
+               <children>
+                  <ComboBox fx:id="comboBoxLanguage" layoutX="11.0" minWidth="110.0" prefHeight="23.0" prefWidth="110.0" promptText="Language">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="English" />
+                           <String fx:value="Tiếng Việt" />
+                           <String fx:value="中文" />
+                           <String fx:value="Français" />
+                           <String fx:value="Русский" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+               </children></AnchorPane>
+            <TextField fx:id="showTextPassword" layoutX="134.0" layoutY="238.0" prefWidth="195.0" promptText="%toShow" />
+            <ImageView fitHeight="55.0" fitWidth="93.0" layoutX="170.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/login-view_lock.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="loginLabel" alignment="CENTER" layoutX="45.0" layoutY="43.0" prefHeight="38.0" prefWidth="306.0" text="%login">
+               <font>
+                  <Font name="Verdana Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="65.0" layoutY="200.0" text="%username">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsername" layoutX="134.0" layoutY="195.0" prefWidth="195.0" promptText="%username" />
+            <Label fx:id="PasswordLabel" layoutX="65.0" layoutY="243.0" text="%password">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="textPassword" layoutX="134.0" layoutY="238.0" prefHeight="25.0" prefWidth="195.0" promptText="%password" />
+            <Button fx:id="btn_login" layoutX="66.0" layoutY="312.0" mnemonicParsing="false" onAction="#logIn" prefHeight="37.0" prefWidth="262.0" text="%login" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="haveAccountLabel" layoutX="63.0" layoutY="405.0" text="%haveAccount">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_signup" layoutX="212.0" layoutY="395.0" mnemonicParsing="false" onAction="#onRegisterBtn" prefHeight="36.0" prefWidth="115.0" text="%register" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="invalid_login_alert" alignment="CENTER" layoutX="65.0" layoutY="162.0" prefHeight="15.0" prefWidth="262.0" text="%welcome" textFill="#2562ba">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="showPasswordCheckBox" layoutX="66.0" layoutY="272.0" mnemonicParsing="false" onAction="#setShowPasswordCheckBox" prefHeight="19.0" prefWidth="137.0" text="%showPass">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </CheckBox>
+            <Label fx:id="forgotPasswordLabel" alignment="CENTER_RIGHT" layoutX="189.0" layoutY="273.0" prefHeight="15.0" prefWidth="139.0" text="%forgotPass" textFill="#6499e9">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Button fx:id="btnClose" layoutX="322.0" layoutY="3.0" mnemonicParsing="false" onAction="#closeBtnAction" prefHeight="18.0" prefWidth="27.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/close-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnMinimize" layoutX="287.0" layoutY="3.0" mnemonicParsing="false" onAction="#minBtnAction" prefHeight="18.0" prefWidth="27.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/minimize-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txtPort" layoutX="-44.0" layoutY="427.0" prefHeight="26.0" prefWidth="54.0" text="23402" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

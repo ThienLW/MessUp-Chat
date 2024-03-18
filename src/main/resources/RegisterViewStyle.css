@@ -1,0 +1,173 @@
+/* Close and Minimize button */
+#btnClose, #btnMinimize {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+/* Đặt độ trong suốt */
+#btnMinimize .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+#btnClose .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+/* Đảm bảo hình bên trong hiển thị và có thể click */
+#btnMinimize .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+#btnClose .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+
+/* btnClose:hover */
+#btnClose:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 0.7), 15, 0, 0, 0);
+}
+
+/* btnMinimize:hover */
+#btnMinimize:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 255, 0, 0.7), 15, 0, 0, 0);
+
+}
+
+/* Điều chỉnh giao diện cho tiêu đề "User Registration" */
+#txtUserRegis {
+    -fx-font-family: "Verdana"; /* Sử dụng font Verdana hoặc font khác theo sở thích của bạn */
+    -fx-font-size: 28px; /* Kích thước chữ */
+    -fx-text-fill: #007acc; /* Màu chữ */
+    -fx-font-weight: bold; /* Chữ in đậm */
+}
+
+/* Điều chỉnh font chữ và màu sắc */
+.text-field, .password-field, .combo-box {
+    -fx-font-family: "Verdana"; /* Sử dụng font Verdana */
+    -fx-font-size: 12px;
+}
+
+/* Điều chỉnh giao diện cho các TextField */
+.text-field, .password-field {
+    -fx-background-color: #f0f0f0; /* Màu nền cho text field */
+    -fx-text-fill: #333; /* Màu chữ cho text field */
+    -fx-prompt-text-fill: #888; /* Màu văn bản gợi ý */
+    -fx-border-color: #ddd; /* Màu viền */
+    -fx-border-radius: 5px; /* Bo góc viền */
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-background-color: #fff; /* Màu nền khi focus */
+    -fx-border-color: #007acc; /* Màu viền khi focus */
+}
+
+/* Styling the ComboBox button */
+.combo-box {
+    -fx-background-color: #ffffff; /* Màu nền */
+    -fx-border-width: 1px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+}
+.combo-box .arrow {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/* Styling the ComboBox popup */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-width: 1px;
+    -fx-border-color: #7BC5CD; /* Màu đường viền */
+    -fx-background-radius: 0 0 5 5;
+}
+
+/* Styling the ComboBox items */
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+/* Styling the hover ComboBox item */
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #6499E9; /* Màu nền khi chọn */
+    -fx-text-fill: white; /* Màu chữ khi chọn */
+}
+
+/* Styling the selected ComboBox item */
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-text-fill: black; /* Màu chữ khi chọn */
+}
+
+/* Điều chỉnh giao diện cho DatePicker */
+.date-picker {
+    -fx-background-color: #f0f0f0; /* Màu nền cho date picker */
+    -fx-text-fill: #333; /* Màu chữ cho date picker */
+    -fx-border-color: #ddd; /* Màu viền */
+    -fx-border-radius: 5px; /* Bo góc viền */
+}
+
+.date-picker:focused {
+    -fx-background-color: #fff; /* Màu nền khi focus */
+}
+
+/* Điều chỉnh giao diện cho drop-down button */
+.date-picker .arrow-button {
+    -fx-background-color: #7BC5CD; /* Màu nền cho nút mở drop-down */
+    -fx-text-fill: white; /* Màu mũi tên mở drop-down */
+    -fx-border-radius: 5px; /* Bo góc viền */
+}
+
+/* Điều chỉnh giao diện cho pop-up calendar */
+.date-picker-popup {
+    -fx-background-color: white; /* Màu nền cho pop-up */
+    -fx-border-color: #007acc; /* Màu viền cho pop-up */
+}
+
+/* Điều chỉnh giao diện cho nút Next và Previous trong pop-up calendar */
+.date-picker-popup > .calendar > .right-arrow-button, .date-picker-popup > .calendar > .left-arrow-button {
+    -fx-background-color: transparent; /* Loại bỏ màu nền cho nút Next và Previous */
+}
+
+.date-picker-popup > .calendar > .right-arrow-button:hover, .date-picker-popup > .calendar > .left-arrow-button:hover {
+    -fx-background-color: #007acc; /* Màu nền khi hover nút Next và Previous */
+    -fx-text-fill: white; /* Màu chữ khi hover nút Next và Previous */
+}
+
+/*Button*/
+#btn_regis {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #007acc; /* Màu nền cho nút đăng ký (blue) */
+    -fx-text-fill: white; /* Màu chữ cho nút đăng ký */
+    -fx-background-radius: 5px; /* Bo góc viền */
+}
+
+#btn_regis:hover {
+    -fx-background-color: #005b9f; /* Màu nền khi hover nút đăng ký (blue) */
+}
+
+#btn_regis:pressed {
+    -fx-background-color: #ccc; /* Màu nền khi click nút đăng ký (blue) */
+    -fx-text-fill: #005b9f;
+}
+
+#btn_cancel {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #ff5722; /* Màu nền cho nút hủy (đỏ cam) */
+    -fx-text-fill: white; /* Màu chữ cho nút hủy */
+    -fx-background-radius: 5px; /* Bo góc viền */
+}
+
+#btn_cancel:hover {
+    -fx-background-color: #e64a19; /* Màu nền khi hover nút hủy (đỏ cam) */
+}
+
+#btn_cancel:pressed {
+    -fx-background-color: #fcf414; /* Màu nền khi click nút hủy (đỏ cam) */
+    -fx-text-fill: #ff5722;
+}

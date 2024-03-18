@@ -1,0 +1,265 @@
+/* Close and Minimize button */
+#btnClose, #btnMinimize {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+/* Đặt độ trong suốt */
+#btnMinimize .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+#btnClose .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+/* Đảm bảo hình bên trong hiển thị và có thể click */
+#btnMinimize .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+#btnClose .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+
+/* btnClose:hover */
+#btnClose:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 0.7), 15, 0, 0, 0);
+}
+
+/* btnMinimize:hover */
+#btnMinimize:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 255, 0, 0.7), 15, 0, 0, 0);
+}
+
+/* Styling the Circle status */
+.circle-glowing {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+    -fx-outer-border: derive(-fx-inner-border, 20%);
+    -fx-background-color: -fx-mark-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 50;
+}
+
+/* Styling the ComboBox button */
+.combo-box {
+    -fx-background-color: #ffffff; /* Màu nền */
+    -fx-border-width: 1px;
+    -fx-pref-width: 80px; /* Độ rộng */
+    -fx-background-radius: 5px;
+}
+.combo-box .arrow {
+    -fx-background-color: #6499E9;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/* Styling the ComboBox popup */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-width: 1px;
+    -fx-border-color: #7BC5CD; /* Màu đường viền */
+    -fx-background-radius: 0 0 5 5;
+}
+
+/* Styling the ComboBox items */
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+/* Styling the hover ComboBox item */
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #6499E9; /* Màu nền khi chọn */
+    -fx-text-fill: white; /* Màu chữ khi chọn */
+}
+
+/* Styling the selected ComboBox item */
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-text-fill: black; /* Màu chữ khi chọn */
+}
+
+/* Define the animation for the glowing effect */
+.circle-glowing:glowing {
+    -fx-effect: dropshadow(gaussian, derive(#f7ff00, -50%), 20, 0, 0, 0);
+    -fx-background-color: -fx-mark-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 50;
+}
+
+/* Styling the partnerImageView */
+#userImageView:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+    -fx-outer-border: derive(-fx-inner-border, 20%);
+    -fx-background-color: -fx-mark-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 50;
+}
+
+/* Styling the partnerImageView */
+#partnerImageView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+    -fx-outer-border: derive(-fx-inner-border, 20%);
+    -fx-background-color: -fx-mark-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 50;
+}
+
+/*Chat cell elements style*/
+.sender-box {
+    -fx-background-color: #9EDDFF;
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+    -fx-alignment: top-left;
+    -fx-text-color: BLACK;
+}
+
+.receiver-box {
+    -fx-background-color: #F0F0F0;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+    -fx-alignment: top-left;
+    -fx-text-color: BLACK;
+}
+
+.user-label {
+    -fx-font-size: 10px;
+}
+
+.timer-style{
+    -fx-text-fill: #7D7C7C; /* Đặt màu xám cho văn bản */
+    -fx-font-size: 10px; /* Đặt kích thước chữ */
+    -fx-padding: 0; /* Đặt khoảng cách giữa nội dung và biên */
+
+}
+
+/* Button Style */
+/* Ẩn nút */
+.button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+/* Đặt độ trong suốt */
+.button .label {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+/* Đảm bảo hình bên trong hiển thị và có thể click */
+.button .graphic {
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+
+/* btnVidCall:hover */
+#btnVidCall:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 139, 0.7), 15, 0, 0, 0);
+}
+
+/* btnVoiceCall:hover */
+#btnVoiceCall:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 139, 0.7), 15, 0, 0, 0);
+}
+
+/* btnSearch:hover */
+#btnSearch:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 139, 0.7), 15, 0, 0, 0);
+}
+
+/* btnSend:hover */
+#btnSend:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 196, 255, 0.7), 15, 0, 0, 0);
+}
+
+/* btnMicro:hover */
+#btnMicro:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 196, 255, 0.7), 15, 0, 0, 0);
+}
+
+/* btnEmoji:hover */
+#btnEmoji:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 196, 255, 0.7), 15, 0, 0, 0);
+}
+
+/*ListView*/
+/* Tắt màu nền xen kẽ của các hàng */
+.list-view .list-cell {
+    -fx-background-color: white;
+}
+
+/* List-cell of userGroup style */
+#userGroup .list-cell{
+    -fx-cursor: hand;
+}
+#userGroup .list-cell:hover {
+    -fx-background-color: #e1e1e1; /* Màu nền khi hover */
+}
+#userGroup .list-cell:selected {
+    -fx-background-color: #CAEDFF; /* Màu nền khi select */
+}
+/* Style border chat chatWindow */
+#chatWindow {
+    -fx-background-color: white;
+    -fx-border-style: none;
+}
+/*Listview scrollbar*/
+.scroll-bar:vertical {
+    -fx-background-color: transparent; /* Màu nền thanh cuộn */
+    -fx-background-insets: 0;
+    -fx-pref-width: 5px; /* Đặt chiều rộng của thanh cuộn */
+    -fx-padding: 0px; /* Đặt khoảng cách so với xung quanh */
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #D0D4CA; /* Màu của nút trượt */
+    -fx-background-insets: 0;
+}
+
+/* Tạo hiệu ứng hover */
+.scroll-bar:vertical:hover .thumb {
+    -fx-background-color: #AAAAAA; /* Màu của nút trượt khi hover */
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: #f4f4f4; /* Màu của nút điều hướng */
+    -fx-background-insets: 0;
+}
+
+/* Chat bar container style */
+#chatBarContainer{
+    -fx-alignment: center; /* Cho căng giữa theo chiều ngang */
+    -fx-padding: 4 0 4 0;
+}
+#textContainer {
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-border-width: 2px;
+    -fx-border-color: #D2E0FB;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+}
+#textSend {
+    -fx-control-inner-background: transparent;
+    -fx-background-color: transparent; /* Đặt màu nền trong suốt */
+    -fx-border-color: transparent; /* Đặt màu viền trong suốt */
+    -fx-text-fill: black;
+    -fx-control-inner-border-width: 0;
+}
+#textSend:selected {
+    -fx-control-inner-background: transparent;
+    -fx-border-width: 0;
+}
+#textSend .scroll-pane .viewport { /* Loại bỏ viền */
+    -fx-border-width: 0;
+}
+
+#textSend .scroll-pane .scroll-bar {  /* Loại bỏ scroll bar */
+    -fx-opacity: 0;
+}

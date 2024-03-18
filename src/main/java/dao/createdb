@@ -1,0 +1,11 @@
+CREATE TABLE ChatUser (
+    id INT PRIMARY KEY,
+    username VARCHAR(70) NOT NULL,
+    firstName VARCHAR(70) NOT NULL,
+    surname VARCHAR(70) NOT NULL,
+    birthDay DATE NOT NULL,
+    gender VARCHAR(70) NOT NULL,
+    secQuestion VARCHAR(70) NOT NULL,
+    answerSecQuestion VARCHAR(70) NOT NULL,
+    password VARCHAR(70) NOT NULL
+);
